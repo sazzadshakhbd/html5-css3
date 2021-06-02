@@ -8,10 +8,18 @@
   </head>
   <body>
     <canvas
-      id="myCavas"
+      id="myCanvas"
       width="300"
       height="200"
       style="border: 2px solid teal"
-    ></canvas>
+      >Your browser does not support the HTML canvas tag.</canvas
+    >
+    <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.moveTo(0, 0);
+      ctx.lineTo(300, 200);
+      ctx.stroke();
+    </script>
   </body>
 </html>
