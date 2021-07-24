@@ -25,3 +25,23 @@
 }
 
 /* Icon Bar Horizontality CSS */
+.icon-bar-horizontal {
+  width: 100%;
+  background: #555;
+  overflow: auto;
+}
+.icon-bar-horizontal a {
+  float: left;
+  width: 20%;
+  padding: 12px 0;
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  transition: 0.5s;
+}
+.icon-bar-horizontal a:hover {
+  background: #000;
+}
+.icon-bar-horizontal a.active {
+  background: #04AA6D;
+}
