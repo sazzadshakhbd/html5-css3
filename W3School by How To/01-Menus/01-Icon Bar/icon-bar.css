@@ -2,11 +2,14 @@
   margin: 0;
   padding: 0;
 }
-.icon-bar {
+
+/* Icon Bar Vertically CSS */
+
+.icon-bar-vertical {
   width: 90px;
   background: #555;
 }
-.icon-bar a {
+.icon-bar-vertical a {
   display: block;
   text-align: center;
   font-size: 36px;
@@ -14,9 +17,11 @@
   padding: 16px;
   transition: 0.5s;
 }
-.icon-bar a:hover {
+.icon-bar-vertical a:hover {
   background: #000;
 }
-.icon-bar a.active {
+.icon-bar-vertical a.active {
   background: #04AA6D;
 }
+
+/* Icon Bar Horizontality CSS */
