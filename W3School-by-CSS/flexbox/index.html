@@ -10,11 +10,12 @@
     .flex-container {
       display: flex;
       background: teal;
-      justify-content: space-around;
-      justify-content: space-between;
-      justify-content: center;
-      justify-content: flex-start;
-      justify-content: flex-end;
+      height: 300px;
+      align-items: flex-start;
+      align-items: flex-end;
+      align-items: center;
+      align-items: stretch;
+      align-items: baseline;
     }
 
     .flex-container>div {
@@ -30,9 +31,15 @@
 
 <body>
   <div class="flex-container">
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
+    <div>
+      <h1>1</h1>
+    </div>
+    <div>
+      <h3>2</h3>
+    </div>
+    <div>
+      <h6>3</h6>
+    </div>
 </body>
 
 </html>
