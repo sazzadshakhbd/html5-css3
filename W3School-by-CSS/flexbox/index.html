@@ -9,28 +9,38 @@
   <style>
     .flex-container {
       display: flex;
-      background: teal;
-      height: 100vh;
-      width: 100%;
-      align-items: center;
-      justify-content: center;
+      background: #f1f1f1;
+      align-items: stretch;
     }
 
     .flex-container>div {
       font-size: 30px;
-      background: #f1f1f1;
+      background: teal;
       width: 8.25%;
       margin: 10px;
       line-height: 75px;
       text-align: center;
+      color: #fff;
     }
   </style>
 </head>
 
 <body>
   <div class="flex-container">
-    <div>
+    <div style="order: 4">
       <h1>1</h1>
+    </div>
+    <div style="order: 2">
+      <h1>2</h1>
+    </div>
+    <div style="order: 1">
+      <h1>3</h1>
+    </div>
+    <div style="order: 3">
+      <h1>4</h1>
+    </div>
+    <div style="order: 0">
+      <h1>5</h1>
     </div>
 </body>
 
