@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Responsive - 2</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-flow: wrap;
+      font-size: 35px;
+      text-align: center;
+    }
+
+    .flex-item-left {
+      background-color: ghostwhite;
+      padding: 1rem;
+      flex: 50%;
+    }
+
+    .flex-item-right {
+      background-color: dodgerblue;
+      padding: 1rem;
+      flex: 50%;
+    }
+
+    @media (max-width:800px) {
+
+      .flex-item-left,
+      .flex-item-right {
+        flex: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex-container">
+    <div class="flex-item-left">1</div>
+    <div class="flex-item-right">2</div>
+  </div>
+</body>
+
+</html>
