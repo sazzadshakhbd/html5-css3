@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How To Make Hover Effect on Website Using HTML and CSS Icons Animation on Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ca36695825.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .hero {
+      background: #f1f9ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      height: 100vh;
+    }
+
+    h1 {
+      font-size: 40px;
+      text-transform: capitalize;
+      margin-bottom: 100px;
+      margin-top: -100px;
+    }
+
+    .social-links {
+      display: flex;
+    }
+
+    .social-links a {
+      width: 80px;
+      height: 80px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 50%;
+      box-shadow: 0 20px 10px rgba(0, 0, 0, 0.05);
+      margin: 0 30px;
+      color: #000;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.5s;
+    }
+
+    .social-links a .fab {
+      font-size: 30px;
+      line-height: 80px;
+      position: relative;
+      z-index: 10;
+      transition: color 0.5s;
+    }
+
+    .social-links a::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      top: -90px;
+      left: 0;
+      position: absolute;
+      background: linear-gradient(-45deg, #ed1c94, #ffec17);
+      transition: 0.5s;
+    }
+
+    .social-links a:hover::after {
+      top: 0;
+    }
+
+    .social-links a:hover .fab {
+      color: #fff;
+    }
+
+    .social-links a:hover {
+      transform: translateY(-10px);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="hero">
+    <h1>social icon hover effects</h1>
+    <div class="social-links">
+      <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</body>
+
+</html>
