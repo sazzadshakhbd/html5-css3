@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How To Make Hover Effect For Icons On The Website Using HTML And CSS</title>
+  <script src="https://kit.fontawesome.com/ca36695825.js" crossorigin="anonymous"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f2f2fe;
+    }
+
+    .icons a {
+      text-decoration: none;
+      width: 50px;
+      height: 50px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px;
+      font-size: 20;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+      transition: background-position 0.5s;
+      background-size: 100% 200%;
+      background-position: 0% 5%;
+    }
+
+    .icons a:nth-child(1) {
+      color: #1976de;
+      background-image: linear-gradient(#fff 50%, #1976de 50%);
+    }
+
+    .icons a:nth-child(2) {
+      color: #f44236;
+      background-image: linear-gradient(#fff 50%, #f44236 50%);
+    }
+
+    .icons a:nth-child(3) {
+      color: #03a9f5;
+      background-image: linear-gradient(#fff 50%, #03a9f5 50%);
+    }
+
+    .icons a:hover {
+      background-position: 0% 100%;
+      color: #fff;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="icons"><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a><a
+        href="https://www.facebook.com"><i class="fab fa-youtube"></i></a><a href="https://www.facebook.com"><i
+          class="fab fa-twitter"></i></a></div>
+  </div>
+</body>
+
+</html>
